@@ -1,1 +1,0 @@
-# Githubgit-pokedek-e-js

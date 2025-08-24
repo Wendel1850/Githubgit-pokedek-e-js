@@ -1,0 +1,26 @@
+// Consumir a API REST de Pokémon
+fetch('https:                              
+  .then(response => response.json())
+  .then(data => {
+    const pokemons = data.results;
+    pokemons.forEach(pokemon => {
+      const pokemonHTML = `
+        <div class="pokemon">
+          <h2>${pokemon.name}</h2>
+          <img src="${pokemon.url}" alt="${pokemon.name}">
+        </div>
+      `;
+      document.getElementById('//pokeapi.co/api/v2/pokemon/')
+  .then(response => response.json())
+  .then(data => {
+    const pokemons = data.results;
+    pokemons.forEach(pokemon => {
+      const pokemonHTML = `
+        <div class="pokemon">
+          <h2>${pokemon.name}</h2>
+          <img src="${pokemon.url}" alt="${pokemon.name}">
+        </div>
+      `;
+      document.getElementById('pokemons').innerHTML += pokemonHTML;
+    });
+  });
